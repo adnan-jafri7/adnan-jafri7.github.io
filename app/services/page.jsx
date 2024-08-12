@@ -7,25 +7,25 @@ const services = [
   {
     num:'01',
     title:'Mobile Application Development',
-    description:'We develop Mobile Applications from scratch and provide security to them.',
+    description:'I craft mobile apps from the ground up for both Android and iOS, ensuring seamless user experiences.',
     href:''
   },
   {
     num:'02',
     title:'Web Application Development',
-    description:'We develop Mobile Applications from scratch and provide security to them.',
+    description:'I design and develop web applications from scratch, creating smooth and responsive user interfaces.',
     href:''
   },
   {
     num:'03',
     title:'Backend Development',
-    description:'We develop Mobile Applications from scratch and provide security to them.',
+    description:'I build robust backend systems from the ground up, ensuring reliable and scalable application performance.',
     href:''
   },
   {
     num:'04',
     title:'AWS Cloud Services',
-    description:'We develop Mobile Applications from scratch and provide security to them.',
+    description:'I design and deploy scalable solutions using AWS for optimal cloud performance.',
     href:''
   },
 ]
@@ -48,7 +48,7 @@ const Services = () => {
               </Link>
               </div>
               <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500'>{service.title}</h2>
-              <p className='text-white/60'>{service.description}</p>
+              <p className='text-white/60 text-justify'>{service.description}</p>
               <div className='border-b border-white/20 w-full'></div>
             </div>
             )

@@ -1,5 +1,6 @@
 'use client'
-import {FaHtml5,FaCss3,FaJs,FaReact,FaFigma,FaNodeJs} from 'react-icons/fa'
+import {FaHtml5,FaCss3,FaJs,FaReact,FaFigma,FaNodeJs,FaJava,FaGithub,FaAndroid,FaApple,FaAws,FaPython} from 'react-icons/fa'
+import { SiMysql } from "react-icons/si";
 import {SiTailwindcss, SiNextdotjs} from 'react-icons/si'
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
 import {motion} from 'framer-motion'
@@ -108,13 +109,38 @@ const skills={
       name:"React JS"
     },
     {
-      icon:<FaFigma/>,
-      name:"Figma"
+      icon:<SiMysql/>,
+      name:"My SQL"
     },
     {
       icon:<FaNodeJs/>,
       name:"Node JS"
-    }
+    },
+    {
+      icon:<FaJava/>,
+      name:"Java"
+    },
+    {
+      icon:<FaGithub/>,
+      name:"Github"
+    },
+    {
+      icon:<FaAndroid/>,
+      name:"Android"
+    },
+    {
+      icon:<FaApple/>,
+      name:"iOS"
+    },
+    {
+      icon:<FaAws/>,
+      name:"Amazon Web Services"
+    },
+    {
+      icon:<FaPython/>,
+      name:"Python"
+    },
+
   ]
 }
 

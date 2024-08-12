@@ -26,7 +26,6 @@
     .text-outline-hover{
       -webkit-text-stroke:1px #00ff99;
     }
-
     
     .hover-parent:hover .child-hover {
       color: white;
