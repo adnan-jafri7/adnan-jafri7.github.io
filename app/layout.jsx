@@ -19,12 +19,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={jetbrainsMono.variable}>
-      <div className="flex float-right m-6 mr-20"> 
+      {/* <div className="flex float-right m-6 mr-20"> 
       <span className="bg-[#FF671F] w-[20px] h-[20px] rounded-full cursor-pointer mr-2"></span>
       <span className="bg-[#FFffff] w-[20px] h-[20px] rounded-full cursor-pointer mr-2"></span> 
         <span className="bg-accent w-[20px] h-[20px] rounded-full  cursor-pointer"></span>
         
-      </div>
+      </div> */}
         <Header/>
         <StairTransition/>
         <PageTransition>

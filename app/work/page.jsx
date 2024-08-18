@@ -19,40 +19,50 @@ const projects=[
     {
       num:"01",
       category:'frontend',
-      title:"project 1",
-      description:"This is the project for frontend development",
-      stack:[{name:'Html 5'},{name:"Css 3"},{name:'Javascript'}],
+      title:"LRD & WRD Tool",
+      description:`This project, part of the Space-based Information Support for Decentralized Planning (SISDP) under the Ministry of Panchayati Raj, focuses on developing a tool that automatically generates development plans for Gram Panchayats using satellite data of land and water bodies. I contributed to the front-end development of this project, which was launched by the Minister of Science & Technology.`,
+      stack:[{name:'React JS'},{name:"Css 3"},{name:'HTML 5'},{name:'Bootstrap'}],
       image:"/assets/work/thumb1.png",
-      live:"",
+      live:"https://bhuvan-nyayavikas.nrsc.gov.in/lrdwrd/",
       github:"",
     },
     {
       num:"02",
-      category:'frontend',
-      title:"project 1",
-      description:"This is the project for frontend development",
-      stack:[{name:'Html 5'},{name:"Css 3"},{name:'Javascript'}],
+      category:'Mobile App',
+      title:"Map-iN",
+      description:"Map-iN is a React Native mobile app for real-time geospatial data collection, used in Himachal Pradesh for Disaster Management. It enables users to capture locations and draw geospatial shapes, ensuring efficient performance on both Android and iOS devices.",
+      stack:[{name:'React Native'},{name:"PHP"},{name:'Kotlin'},{name:'iOS'},{name:'Postgres'}],
+      image:"/assets/work/thumb1.png",
+      live:"",
+      github:"https://github.com/adnan-jafri7/Map_in",
+    },
+    {
+      num:"03",
+      category:'Mobile App',
+      title:`KISAAN`,
+      description:"I contributed to the development of an Android app for farmers in Uttarakhand, India, created in collaboration with IIT-Roorkee and ISRO. The app delivers weather forecasts, crop advisories, and localized meteorological data based on users' geographic coordinates obtained from meteorological satellites.",
+      stack:[{name:'React Native'},{name:"PHP"},{name:'Kotlin'},{name:'iOS'},{name:'Postgres'}],
       image:"/assets/work/thumb2.png",
       live:"",
       github:"",
     },
     {
-      num:"03",
-      category:'frontend',
-      title:"project 1",
-      description:"This is the project for frontend development",
-      stack:[{name:'Html 5'},{name:"Css 3"},{name:'Javascript'}],
+      num:"04",
+      category:'Web & Android App',
+      title:"Bijlee",
+      description:"I spearheaded the development of an Android and web-based application focused on facilitating electricity bill payments and mobile recharges, operating under a Business-to-Business (B2B) model. Leveraging Amazon Web Services (AWS) for robust development, the app achieved significant success, generating a turnover of Rs. 2 Crores within two years.",
+      stack:[{name:'Html 5'},{name:"CSS 3"},{name:'PHP'},{name:'MySQL'},{name:'AWS'},{name:'Kotlin'},{name:'XML'}],
       image:"/assets/work/thumb3.png",
       live:"",
       github:"",
     },
     {
-      num:"04",
-      category:'frontend',
-      title:"project 1",
-      description:"This is the project for frontend development",
-      stack:[{name:'Html 5'},{name:"Css 3"},{name:'Javascript'}],
-      image:"/assets/work/thumb1.png",
+      num:"05",
+      category:'Web & Android App',
+      title:"Apni Dukan 24",
+      description:"I led the development of Apni Dukan 24, a hybrid application available on Google Play Store that facilitates vegetable and medicine delivery. The app seamlessly integrates with both Android devices and web platforms using WIX and Webview technology. It boasts a convenient voice search feature, enhancing user accessibility. Apni Dukan 24 operates under a business-to-customer (B2C) model, providing a user-friendly platform for efficient online shopping experiences.",
+      stack:[{name:'Html 5'},{name:"CSS 3"},{name:'PHP'},{name:'Kotlin'},{name:'WIX'},],
+      image:"/assets/work/thumb4.png",
       live:"",
       github:"",
     },
@@ -79,8 +89,8 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category}</h2>
-              <p className="text-white/60">{project.description}</p>
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.title}</h2>
+              <p className="text-white/60 text-justify">{project.description}</p>
               <ul className="flex gap-4">
                 {project.stack.map((item,index)=>{
                   return(
@@ -95,7 +105,7 @@ const Work = () => {
               </ul>
               <div className="border border-white/20"></div>
               <div className="flex items-center gap-4">
-                <Link href={project.live}>
+                <Link href={project.live} target="blank" className="mb-5">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -108,7 +118,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
 
-                <Link href={project.github}>
+                <Link href={project.github} target="blank" className="mb-5">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -132,11 +142,11 @@ const Work = () => {
               >
               {projects.map((item,index)=>{
                 return(
-                  <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                  <SwiperSlide key={index} className="w-full ">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20 ">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                    <div className="relative w-full h-full">
-                      <Image src={project.image} alt={project.title} fill className="object-cover" />
+                    <div className="relative w-full h-full ">
+                      <Image src={project.image} alt={project.title} fill className="object-cover  " />
                     </div>
 
                     </div>
