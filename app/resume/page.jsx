@@ -46,8 +46,8 @@ const experience={
   description:'I am Adnan Jafri, Mobile & Web Application Developer',
   items:[
     {
-      company:'Computer Maintenance Agency',
-      position:'Maintenance Engineer',
+      company:'RRSC North, NRSC, ISRO',
+      position:'Mobile & Web Application Developer',
       duration:'Aug, 2023 - Present'
     },
     {
