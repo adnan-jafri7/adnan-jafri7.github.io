@@ -22,7 +22,7 @@ const projects=[
       title:"LRD & WRD Tool",
       description:`This project, part of the Space-based Information Support for Decentralized Planning (SISDP) under the Ministry of Panchayati Raj, focuses on developing a tool that automatically generates development plans for Gram Panchayats using satellite data of land and water bodies. I contributed to the front-end development of this project, which was launched by the Minister of Science & Technology.`,
       stack:[{name:'React JS'},{name:"Css 3"},{name:'HTML 5'},{name:'Bootstrap'}],
-      image:"/assets/work/thumb1.png",
+      image:"/assets/work/thumb5.png",
       live:"https://bhuvan-nyayavikas.nrsc.gov.in/lrdwrd/",
       github:"",
     },
